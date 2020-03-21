@@ -3,12 +3,12 @@
 use Quasar\Core\Models\CoreModel;
 
 /**
- * Class Group
+ * Class ContactGroup
  * @package Quasar\Crm\Models
  */
 
-class CustomerGroup extends CoreModel
+class ContactGroup extends CoreModel
 {
-    protected $table        = 'crm_customer_group';
+    protected $table        = 'crm_contact_group';
     protected $fillable     = ['uuid', 'name'];
 }

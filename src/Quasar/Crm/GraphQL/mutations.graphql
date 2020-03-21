@@ -1,0 +1,9 @@
+# Contact
+crmCreateContact(payload:CrmContactInput!): CrmContact @field(resolver: "Quasar\\Crm\\GraphQL\\Resolvers\\ContactResolver@create")
+crmUpdateContact(payload:CrmContactInput!): CrmContact @field(resolver: "Quasar\\Crm\\GraphQL\\Resolvers\\ContactResolver@update")
+crmDeleteContact(uuid:ID!): [CrmContact] @field(resolver: "Quasar\\Crm\\GraphQL\\Resolvers\\ContactResolver@delete")
+
+# ContactGroup
+crmCreateContactGroup(payload:CrmContactGroupInput!): CrmContactGroup @field(resolver: "Quasar\\Crm\\GraphQL\\Resolvers\\ContactGroupResolver@create")
+crmUpdateContactGroup(payload:CrmContactGroupInput!): CrmContactGroup @field(resolver: "Quasar\\Crm\\GraphQL\\Resolvers\\ContactGroupResolver@update")
+crmDeleteContactGroup(uuid:ID!): [CrmContactGroup] @field(resolver: "Quasar\\Crm\\GraphQL\\Resolvers\\ContactGroupResolver@delete")

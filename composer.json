@@ -1,0 +1,42 @@
+{
+    "name": "quasar/crm",
+    "description": "Quasar Crm package",
+    "keywords": [
+        "syscover",
+        "pulsar",
+        "quasar",
+        "laravel",
+        "intranet",
+        "crm",
+        "nimbl"
+    ],
+    "authors": [
+        {
+            "name": "Jose Carlos Rodríguez Palacín",
+            "email": "carlos.rodriguez@techedgegroup.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Quasar\\Crm\\": "src/Quasar/Crm"
+        },
+        "classmap": [
+            "src/Quasar/Crm"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Quasar\\Crm\\CrmServiceProvider"
+            ]
+        }
+    }
+}

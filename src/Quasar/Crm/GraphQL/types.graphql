@@ -1,0 +1,45 @@
+type CrmContact
+{
+    id: Int!
+    uuid: ID!
+    langUud: ID
+    groupUuid: ID!
+    company: String
+    tin: String
+    genderUuid: ID
+    treatmentUuid: ID
+    stateUuid: ID
+    name: String
+    surname: String
+    avatar: String
+    birthDate: Date
+    email: String!
+    phone: String
+    mobile: String
+    tags: JSON
+    username: String!
+    password: String!
+    rememberToken: String
+    isActive: Boolean!
+    isConfirmed: Boolean!
+    countryCommonUuid: ID
+    administrativeAreaLevel1Uuid: ID
+    administrativeAreaLevel2Uuid: ID
+    administrativeAreaLevel3Uuid: ID
+    zip: String
+    locality: String
+    address: String
+    latitude: Float
+    longitude: Float
+    fieldGroupUuid: String
+    data: JSON
+    createdAt: DateTime
+    updatedAt: DateTime
+}
+
+type CrmContactGroup
+{
+    id: Int!
+    uuid: ID!
+    name: String!
+}

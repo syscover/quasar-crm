@@ -1,0 +1,9 @@
+# Contact
+crmContact(query:[QueryStatementInput]): CrmContact @field(resolver: "Quasar\\Crm\\GraphQL\\Resolvers\\ContactResolver@find")
+crmContacts(query:[QueryStatementInput]): [CrmContact!]! @field(resolver: "Quasar\\Crm\\GraphQL\\Resolvers\\ContactResolver@get")
+crmContactsPagination(query:[QueryStatementInput]): Pagination! @field(resolver: "Quasar\\Crm\\GraphQL\\Resolvers\\ContactResolver@paginate")
+
+# ContactGroup
+crmContactGroup(query:[QueryStatementInput]): CrmContactGroups @field(resolver: "Quasar\\Crm\\GraphQL\\Resolvers\\ContactGroupResolver@find")
+crmContactGroups(query:[QueryStatementInput]): [CrmContactGroups!]! @field(resolver: "Quasar\\Crm\\GraphQL\\Resolvers\\ContactGroupResolver@get")
+crmContactGroupsPagination(query:[QueryStatementInput]): Pagination! @field(resolver: "Quasar\\Crm\\GraphQL\\Resolvers\\ContactGroupResolver@paginate")
