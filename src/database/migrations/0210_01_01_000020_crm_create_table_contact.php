@@ -19,7 +19,7 @@ class CrmCreateTableContact extends Migration {
 
                 $table->increments('id');
                 $table->uuid('uuid');
-                $table->uuid('group_uuid');
+                $table->uuid('group_uuid')->nullable();
                 $table->uuid('lang_uuid')->nullable();
                 $table->string('company')->nullable();
                 $table->string('tin')->nullable();
