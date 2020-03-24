@@ -10,6 +10,9 @@ class CrmSeeder extends Seeder
         Model::unguard();
 
         $this->call(CrmPackageSeeder::class);
+        $this->call(CrmPermissionSeeder::class);
+        $this->call(CrmResourceSeeder::class);
+        $this->call(CrmPermissionsRolesSeeder::class);
                 
         Model::reguard();
     }

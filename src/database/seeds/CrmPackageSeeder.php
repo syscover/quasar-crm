@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use Quasar\Admin\Models\Package;
 
-class CmsPackageSeeder extends Seeder
+class CrmPackageSeeder extends Seeder
 {
     public function run()
     {
@@ -15,5 +15,5 @@ class CmsPackageSeeder extends Seeder
 
 /*
  * Command to run:
- * php artisan db:seed --class="CmsPackageSeeder"
+ * php artisan db:seed --class="CrmPackageSeeder"
  */
