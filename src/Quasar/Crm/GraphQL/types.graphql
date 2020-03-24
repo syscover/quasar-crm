@@ -42,4 +42,6 @@ type CrmContactGroup
     id: Int!
     uuid: ID!
     name: String!
+    createdAt: DateTime
+    updatedAt: DateTime
 }

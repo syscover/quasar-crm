@@ -63,8 +63,6 @@ class CrmCreateTableContact extends Migration {
                 $table->softDeletes();
 
                 $table->index('uuid', 'crm_contact_uuid_idx');
-
-
                 $table->unique('username', 'crm_contact_username_uq');
                 $table->foreign('lang_uuid', 'crm_contact_lang_uuid_fk')
                     ->references('uuid')
@@ -81,31 +79,26 @@ class CrmCreateTableContact extends Migration {
                     ->on('admin_field_group')
                     ->onDelete('restrict')
                     ->onUpdate('cascade');
-                $table->foreign('country_uuid', 'crm_contact_country_uuid_fk')
+                $table->foreign('country_common_uuid', 'crm_contact_country_common_uuid_fk')
                     ->references('common_uuid')
                     ->on('admin_country')
                     ->onDelete('restrict')
                     ->onUpdate('cascade');
-
-                    
-
-                $table->foreign('territorial_area_1_id', 'fk03_crm_contact')
-                    ->references('id')
-                    ->on('admin_territorial_area_1')
+                $table->foreign('administrative_area_level_1_uuid', 'crm_contact_administrative_area_level_1_uuid_fk')
+                    ->references('uuid')
+                    ->on('admin_administrative_area_level_1')
                     ->onDelete('restrict')
                     ->onUpdate('cascade');
-                $table->foreign('territorial_area_2_id', 'fk04_crm_contact')
-                    ->references('id')
-                    ->on('admin_territorial_area_2')
+                $table->foreign('administrative_area_level_2_uuid', 'crm_contact_administrative_area_level_2_uuid_fk')
+                    ->references('uuid')
+                    ->on('admin_administrative_area_level_2')
                     ->onDelete('restrict')
                     ->onUpdate('cascade');
-                $table->foreign('territorial_area_3_id', 'fk05_crm_contact')
-                    ->references('id')
-                    ->on('admin_territorial_area_3')
+                $table->foreign('administrative_area_level_3_uuid', 'crm_contact_administrative_area_level_3_uuid_fk')
+                    ->references('uuid')
+                    ->on('admin_administrative_area_level_3')
                     ->onDelete('restrict')
                     ->onUpdate('cascade');
-                
-                
             });
         }
     }

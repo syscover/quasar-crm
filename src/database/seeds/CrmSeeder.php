@@ -13,6 +13,7 @@ class CrmSeeder extends Seeder
         $this->call(CrmPermissionSeeder::class);
         $this->call(CrmResourceSeeder::class);
         $this->call(CrmPermissionsRolesSeeder::class);
+        $this->call(CrmContactGroupSeeder::class);
                 
         Model::reguard();
     }
