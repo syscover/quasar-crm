@@ -11,8 +11,8 @@ class ContactService extends CoreService
     {
         $this->validate($data, [
             'uuid'                          => 'nullable|uuid',
-            'name'                          => 'required|between:2,255',
-            'groupUuid'                     => 'required|uuid|exists:crm_contact_group,uuid',
+            'name'                          => 'nullable|between:2,255',
+            'groupUuid'                     => 'nullable|uuid|exists:crm_contact_group,uuid',
             'langUud'                       => 'nullable|uuid|exists:admin_lang,uuid',
             'genderUuid'                    => 'nullable|uuid',
             'treatmentUuid'                 => 'nullable|uuid',
@@ -43,8 +43,8 @@ class ContactService extends CoreService
         $this->validate($data, [
             'id'                            => 'required|integer',
             'uuid'                          => 'required|uuid',
-            'name'                          => 'required|between:2,255',
-            'groupUuid'                     => 'required|uuid|exists:crm_contact_group,uuid',
+            'name'                          => 'nullable|between:2,255',
+            'groupUuid'                     => 'nullable|uuid|exists:crm_contact_group,uuid',
             'langUud'                       => 'nullable|uuid|exists:admin_lang,uuid',
             'genderUuid'                    => 'nullable|uuid',
             'treatmentUuid'                 => 'nullable|uuid',

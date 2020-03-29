@@ -2,8 +2,8 @@ input CrmContactInput
 {
     id: Int
     uuid: ID
-    langUud: ID
-    groupUuid: ID!
+    langUuid: ID
+    groupUuid: ID
     company: String
     tin: String
     genderUuid: ID
